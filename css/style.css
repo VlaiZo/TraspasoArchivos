@@ -1,0 +1,99 @@
+#titulo {
+    color: tomato;
+}
+
+
+
+p.texto {
+    color: slateblue;
+}
+
+p.especial {
+    color: mediumseagreen;
+}
+
+div p {
+    color: magenta;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+*{
+    font-size: 24px ;
+    color: black;
+}
+
+
+.color {
+    /* border: 5px red outset; */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px ;
+    border-width: 2rem ;
+    /* La unidad de medida em es relativa al tamaño de la fuente,
+     para fuentes mas grandes mas grande es el borde
+     La unidad rem es relativa al tamaño del elemento raiz, que se coloca en 
+     la etiqueta <html> */
+}
+
+#fondo {
+    color: red;
+    background-color: aquamarine;
+    /* tambien se puede cambiar la opacidad del elemento entero con opacity */
+    background-image: url("fondillo.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100px 100px ;
+    background-position: center bottom;
+    
+    /* background-repeat para que no se repita la foto si el tamaño es mayor o para
+    que se repita vertical o horizontal */
+    /* cover usa todo el ancho disponible y contain contiene la imagen dentro de las
+    dimensiones de la pagina manteniendo la medida de alto o ancho dada, esto 
+    significa que si agrando o achico el tamaño de la ventana la foto cambia */
+
+}
+
+/* font-family es una prop para cambiar fuentes, se puede usar en body en el css
+    body{
+        font-family: sans-serif, impact     
+        (se le puede agregar un fallback, que es una fuente que usara 
+        si no encuentra la que queremos o no esta disponible
+     } */
+
+/* 
+CONVENCION HEXAGECIMAL
+0 es negro, f es blanco, es una escala 0,a,b... , el primer caracter es la cant de rojo, 
+el seg verde y el terc azul, si pongo 6 caracteres, se cuenta de a 2, los 2 primeros son el rojo y asi
+
+.color{
+    color: #ff0000;
+}
+
+ CONVENCION RGB
+ va del 0 al 255, el cuarto valor es la opacidad que va de 0 min a 1 max
+ .color {
+    color: rgb(0, 255, 255);
+}
+
+con ctrl y espacio se pueden ver las opciones que hay de colores y cosas
+con bordes es: border: grosor color estilo
+algunos estilos: dotted, dashed, solid, double, (groove, ridge, inset, outset)se pueden aplicar a elementos 3d, none, hidden
+*/
+
+/* la propiedad in-line sirve para poner una clase o varios p con la misma clase en la misma linea 
+Las propiedades van con : al final, no =*/
+/* la propiedad padding-left (right,top,bottom) es para dar margenes a clases o id 
+si quieres darle el mismo margen de los 4 lados usa solo padding: ej px*/
+/* Usar maxwidth para evitar que los elementos que ocupan un porcentaje de la pantalla
+se alejen demasiado en dispositivos muy anchos, 500px es un buen valor al hacer menus */
+
+/* Se pueden hacer pseudo selectores, agregando un : despues de crearlo
+    a:visited{
+        color: grey;
+    } esto cambiara el color del link luego de apretarlo
+    
+    a:hover para cambiar el color cuando pasas el mouse
+    a:active para cambiar el color cuando lo oprimes*/

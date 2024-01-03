@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <title>pag vlai</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Esta es la pagina del orion</h1>
+    <hr> <!--se le pueden agregar propiedades en css como height para lineas mas gruesas y border
+            y background color para el color de la linea y su borde, border width-->
+    <h2>Orion capitulo 1</h2>
+    <p>El orion es un ser vivo</p>
+    <h2>Orion capitulo 2</h2>
+    <p>
+        El orion huele a basura porque nacio <span style="color:brown">en un corral de pollos</span> 
+        <br>y porque su mama es la <span style="color:green">rana</span> y su papa es el <span style="color:red">marginal</span>
+    </p>
+    <!-- <br> se usa para un salto de linea, puedes poner mas br para saltos mas grandes-->
+    <!-- La etiqueta <a> o anchor se le agregan propiedades, esta etiqueta permite navegar a otras pag
+        dentro o fuera del sitio, con href podemos agregar la url del sitio donde queramos ir
+        y con target="_blank" se abre el link en una pestaña nueva-->
+    <hr>  
+    <a target="_blank" href="https://youtube.com/shorts/XOj981RnDlU?feature=share">Video orion <br><br></a>
+    <img src="img/orion.jpg" height="300" />
+    <hr>
+    <!--La source de la imagen puede ser un link o puede estar en la carpeta del archivo-->
+    <!--Formularios:-->
+    <h2>Formulario del orion</h2>
+    <p>
+        Indique numero de tarjeta y los 3 numeros de atras
+    </p>
+    <form action="/formulario" method="post">
+        <label for="dato">Número</label>
+        <input type="text" id="dato" name="numeros de adelante" placeholder="HOLIIISS"/>
+        <br>
+        <label for="atras">Números de atras</label>
+        <input type="text" id="atras" name="numeros de atras" placeholder="DING DONG"/>
+        <br>
+        <p>Ingrese una carta para el orión</p>
+        <label for="comentario">Carta:</label> 
+        <br>
+        <textarea id="comentario" cols="100" rows="20" placeholder="Escribe aqui" name="comentario"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!--El for es para decirque para que formulario es ese label y el id es para poder asignarle el
+    nombre al formulario, también sirve para que si yo apreto el nombre del formulario en la pagina
+    tambien me aparezca para empezar a escribir texto. name es el nombre de lo que recibe el servidor 
+    junto con el dato ingresado-->
+
+    <!--Para hacer preguntas de seleccion multiple y que al apretar una opcion otra 
+    se deseleccione, hay que ponerles el mimo "name". Cuando se envia el formulario
+    se recibe la info de name, que, en selección multiple, todas las opciones tienen el
+    mismo nombre, por lo que se debe asignar un "value" a cada opción e intentar que 
+    sea igual que su id para que este ordenado-->
+
+    <!--Un fieldset permite agrupar cosas como encuestas, para ponerle titulo se
+    anida un legend dentro-->
+
+    <!--type indica que tipo de input usaremos, como ingresar texto, boton de enviar, etc. si no 
+    coloco type el valor por defecto es text, hay tipo email, password, radio (puntito seleccionable),
+    checkbox, file (que permite ingresar un archivo), etc-->
+
+    <!--rows y cols es para el tamaño de la caja de comentarios, el action es para donde queremos que llegue
+    el formulario, que puede ser un server, aplicación etc.-->
+
+    <!--Hay 3 tipos de botones, botón (que con js se le agrega funcion), reset y submit, este
+    boton es mejor pq con el input submit no le podemos cambiar el nombre al boton, tambien se le puede agregar una imagen-->
+
+        <hr>
+        <h2>Listas</h2>
+
+    <!--"ul" es lista no ordenada, "li" es list item!-->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <!--ol es lista ordenada, value cambia el numero del elemento inicial--->
+        <ol>
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+                <ol>
+                    <li style="list-style-type: lower-alpha;">sub elemento 5</li>
+                    <li style="list-style-type: lower-alpha;">sub elemento 6</li>
+                    <li style="list-style-type: lower-alpha;">sub elemento 7</li>
+                </ol>
+        </ol>
+    
+        <hr>
+        <h2>Tablas</h2>
+        <!--tr es table row (fila), th es para cabezeras o los titulos de las filas y th elementos estandar
+        pero los alinea a la izquierda en vez de al medio como th-->
+
+        <!--Los estilos de las celdas se agregan en head con css-->
+        
+        <!--thead le indica a la pagina cual es la cabezera y tbody con el cuerpo-->
+        <table style="width: 500px;">
+            <tr>
+                <thead>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </thead>
+            </tr>
+                <tbody>
+                    <tr>
+                        <td>paprica</td>
+                        <td>$1000</td>
+                    </tr>
+                    <tr>
+                        <td>gonzalo</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Gato al por menor</td>
+                        <td>$0</td>
+                    </tr>
+                </tbody>
+                
+        </table>
+
+
+
+
+</body>
+</html>
